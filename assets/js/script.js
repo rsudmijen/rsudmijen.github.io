@@ -608,3 +608,22 @@ document.addEventListener('keydown', function (e) {
     }
   }
 });
+ document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabSections = document.querySelectorAll('.facility-section');
+      
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons and sections
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabSections.forEach(section => section.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Show corresponding section
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+    });
