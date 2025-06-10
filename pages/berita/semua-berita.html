@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Head yang sama seperti halaman utama -->
+  <title>Semua Berita | RSUD Mijen</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <!-- Header yang sama seperti halaman utama -->
+
+  <main>
+    <section class="all-news">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../../index.html">Beranda</a> &raquo; 
+          <span>Semua Berita</span>
+        </div>
+        
+        <h1>Berita Terkini RSUD Mijen</h1>
+        
+        <div class="news-filter">
+          <form>
+            <div class="filter-group">
+              <label for="category">Kategori:</label>
+              <select id="category" name="category">
+                <option value="">Semua Kategori</option>
+                <option value="pelayanan">Pelayanan</option>
+                <option value="prestasi">Prestasi</option>
+                <option value="kegiatan">Kegiatan</option>
+                <option value="pengumuman">Pengumuman</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="month">Bulan:</label>
+              <select id="month" name="month">
+                <option value="">Semua Bulan</option>
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">Juni</option>
+                <option value="7">Juli</option>
+                <option value="8">Agustus</option>
+                <option value="9">September</option>
+                <option value="10">Oktober</option>
+                <option value="11">November</option>
+                <option value="12">Desember</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="year">Tahun:</label>
+              <select id="year" name="year">
+                <option value="">Semua Tahun</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="filter-btn">
+              <i class="fas fa-filter"></i> Filter
+            </button>
+          </form>
+        </div>
+        
+        <div class="all-news-grid">
+          <!-- Berita 1 -->
+          <div class="all-news-item">
+            <div class="news-image">
+              <img src="../../assets/images/news1.jpg" alt="Pelayanan Unggulan RSUD Mijen">
+              <div class="news-date">
+                <span class="day">15</span>
+                <span class="month">Jun</span>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="news-category">Pelayanan</div>
+              <h3><a href="detail-berita1.html">RSUD Mijen Luncurkan Pelayanan Unggulan Baru</a></h3>
+              <p>RSUD Mijen memperkenalkan layanan unggulan terbaru untuk meningkatkan kualitas pelayanan kesehatan...</p>
+              <div class="news-meta">
+                <span><i class="fas fa-user"></i> Admin</span>
+                <span><i class="fas fa-eye"></i> 245</span>
+                <a href="detail-berita1.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Berita 2 -->
+          <div class="all-news-item">
+            <div class="news-image">
+              <img src="../../assets/images/news2.jpg" alt="Penghargaan RSUD Mijen">
+              <div class="news-date">
+                <span class="day">10</span>
+                <span class="month">Jun</span>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="news-category">Prestasi</div>
+              <h3><a href="detail-berita2.html">RSUD Mijen Raih Penghargaan RS Terbaik 2023</a></h3>
+              <p>Atas komitmennya dalam memberikan pelayanan kesehatan terbaik, RSUD Mijen meraih penghargaan...</p>
+              <div class="news-meta">
+                <span><i class="fas fa-user"></i> Admin</span>
+                <span><i class="fas fa-eye"></i> 189</span>
+                <a href="detail-berita2.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Berita 3 -->
+          <div class="all-news-item">
+            <div class="news-image">
+              <img src="../../assets/images/news3.jpg" alt="Kegiatan Sosial RSUD Mijen">
+              <div class="news-date">
+                <span class="day">05</span>
+                <span class="month">Jun</span>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="news-category">Kegiatan</div>
+              <h3><a href="detail-berita3.html">RSUD Mijen Gelar Bakti Sosial di Desa Terpencil</a></h3>
+              <p>Sebagai bentuk pengabdian kepada masyarakat, RSUD Mijen mengadakan bakti sosial pemeriksaan kesehatan gratis...</p>
+              <div class="news-meta">
+                <span><i class="fas fa-user"></i> Admin</span>
+                <span><i class="fas fa-eye"></i> 156</span>
+                <a href="detail-berita3.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tambahkan lebih banyak berita di sini -->
+        </div>
+        
+        <div class="pagination">
+          <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i></a>
+          <a href="#" class="page-number active">1</a>
+          <a href="#" class="page-number">2</a>
+          <a href="#" class="page-number">3</a>
+          <a href="#" class="page-nav"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer yang sama seperti halaman utama -->
+</body>
+</html>

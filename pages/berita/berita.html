@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Berita - RSUD Nama Anda</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .news-detail {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .news-detail img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        
+        .news-meta {
+            color: #666;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 15px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (sama seperti index.html) -->
+    <header>
+        <!-- ... -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="news-detail" id="news-content">
+                <!-- Konten berita akan dimuat di sini oleh JavaScript -->
+            </div>
+            <a href="javascript:window.history.back()" class="back-button">Kembali ke Beranda</a>
+        </div>
+    </main>
+
+    <!-- Footer (sama seperti index.html) -->
+    <footer>
+        <!-- ... -->
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ambil ID berita dari URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const newsId = parseInt(urlParams.get('id'));
+            
+            // Ambil data dari localStorage
+            const newsData = JSON.parse(localStorage.getItem('newsData'));
+            
+            if (newsData && newsId) {
+                // Cari berita yang sesuai dengan ID
+                const selectedNews = newsData.find(item => item.id === newsId);
+                
+                if (selectedNews) {
+                    // Tampilkan konten berita
+                    document.getElementById('news-content').innerHTML = selectedNews.fullContent;
+                    document.title = selectedNews.title + ' - RSUD Nama Anda';
+                } else {
+                    document.getElementById('news-content').innerHTML = '<p>Berita tidak ditemukan</p>';
+                }
+            } else {
+                document.getElementById('news-content').innerHTML = '<p>Gagal memuat berita</p>';
+            }
+        });
+    </script>
+</body>
+</html>

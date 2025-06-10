@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Standar Pelayanan - RSUD Mijen</title>
+  <link rel="icon" href="../../assets/images/logo-rsud.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    .service-standards {
+      padding: 30px 0;
+    }
+    
+    .service-standards .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .service-standards h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+    
+    .service-standards h2 {
+      color: #3498db;
+      text-align: center;
+      margin-top: 0;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+    
+    .service-standards h3 {
+      color: #e74c3c;
+      margin-top: 25px;
+      font-size: 1.5rem;
+      border-left: 4px solid #e74c3c;
+      padding-left: 10px;
+    }
+    
+    .standard-section {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .standard-section ol {
+      padding-left: 20px;
+      counter-reset: item;
+    }
+    
+    .standard-section li {
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 30px;
+      list-style-type: none;
+    }
+    
+    .standard-section li:before {
+      content: counter(item) ".";
+      counter-increment: item;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    
+    .standard-section li strong {
+      color: #2c3e50;
+    }
+    
+    .principle-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .principle-card {
+      flex: 1 1 300px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-top: 4px solid #3498db;
+    }
+    
+    .principle-card h4 {
+      color: #3498db;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .principle-card h4 i {
+      margin-right: 10px;
+    }
+    
+    .footer-note {
+      text-align: center;
+      margin-top: 30px;
+      font-style: italic;
+      color: #7f8c8d;
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+    
+    @media (max-width: 768px) {
+      .service-standards h1 {
+        font-size: 1.8rem;
+      }
+      
+      .service-standards h2 {
+        font-size: 1.5rem;
+      }
+      
+      .standard-section {
+        padding: 15px;
+      }
+      
+      .principle-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mobile-overlay"></div>
+
+  <header class="site-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="header-content">
+          <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+            <span class="sr-only">Menu</span>
+          </button>
+
+          <div class="logo">
+            <img src="../../assets/images/logo-rsud.png" alt="Logo RSUD Mijen" />
+            <div class="logo-text">
+              <h1>RSUD Mijen</h1>
+              <p>Pemerintah Kota Semarang</p>
+            </div>
+          </div>
+
+          <div class="search-container">
+            <button class="search-toggle">
+              <i class="fas fa-search"></i>
+              <span class="sr-only">Cari</span>
+            </button>
+            <div class="search-box">
+              <input type="text" placeholder="Cari..." aria-label="Kolom pencarian" />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav id="main-nav">
+      <div class="mobile-nav-header">
+        <img src="../../assets/images/logo-rsud.png" alt="Logo RSUD Mijen" class="mobile-logo" />
+        <div class="mobile-logo-text">
+          <h3>RSUD Mijen</h3>
+          <p>Pemerintah Kota Semarang</p>
+        </div>
+        <button class="close-mobile-menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="../../index.html"><i class="fas fa-home"></i> Beranda</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-hospital"></i> Profil
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/profil/aboutm.html"><i class="fas fa-history"></i> Sejarah</a>
+              </li>
+              <li>
+                <a href="../../pages/profil/visi-misi.html"><i class="fas fa-bullseye"></i> Visi & Misi</a>
+              </li>
+              <li>
+                <a href="../../pages/profil/struktur.html"><i class="fas fa-sitemap"></i> Struktur Organisasi</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-procedures"></i> Layanan
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/layanan/rawat-jalan.html"><i class="fas fa-stethoscope"></i> Rawat Jalan</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/rawat-inap.html"><i class="fas fa-procedures"></i> Rawat Inap</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/ugd.html"><i class="fas fa-ambulance"></i> UGD</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/vk-derina.html"><i class="fas fa-microscope"></i> VK Derina</a>
+              </li>
+               <li>
+                <a href="../../pages/layanan/icu.html"><i class="fas fa-procedures"></i> ICU</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/laboratorium.html"><i class="fas fa-flask"></i> Laboratorium</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-user-md"></i> Dokter
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/dokter/spesialis.html"><i class="fas fa-heartbeat"></i> Dokter Spesialis</a>
+              </li>
+              <li>
+                <a href="../../pages/dokter/umum.html"><i class="fas fa-user-md"></i> Dokter Umum</a>
+              </li>
+              <li>
+                <a href="../../pages/dokter/jadwal.html"><i class="fas fa-calendar-alt"></i> Jadwal Praktik</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../pages/konsultasi/konsultasi.html"><i class="fas fa-comment-medical"></i> Konsultasi Dokter
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> Informasi
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/informasi/monitor-antrian.html" target="_blank"><i class="fas fa-tv"></i> Monitor
+                  Antrian</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/tarif-layanan.html"><i class="fas fa-tags"></i> Tarif Layanan</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/ketersediaan-kamar.html"><i class="fas fa-bed"></i> Ketersediaan Kamar</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/hak-kewajiban.html"><i class="fas fa-balance-scale"></i> Hak & Kewajiban</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/tata-tertib.html"><i class="fas fa-clipboard-list"></i> Tata Tertib</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/alur-pelayanan.html"><i class="fas fa-project-diagram"></i> Alur Pelayanan</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/standar-pelayanan.html"><i class="fas fa-award"></i> Standar Pelayanan</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-phone-alt"></i> Kontak
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu contact-dropdown">
+              <li>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h4>Telepon Rumah Sakit</h4>
+                    <a href="https://wa.me/6282324220902">Hubungi via WhatsApp</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-item">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div>
+                    <h4>Email Pengaduan</h4>
+                    <a href="rsdmijensemarang@gmail.com">rsdmijensemarang@gmail.com</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="social-media-container">
+                  <h4>Sosial Media</h4>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/rsudmijen/" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rsudmijen/" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@rsudmijensemarang" aria-label="Twitter"><i
+                        class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@RSUDMIJENSEMARANG" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="service-standards">
+      <div class="container">
+        <h1>STANDAR PELAYANAN</h1>
+        <h2>RSUD MIJEN KOTA SEMARANG</h2>
+        
+        <div class="standard-section">
+          <h3><i class="fas fa-bullseye"></i> VISI DAN MISI PELAYANAN</h3>
+          <p>RSUD Mijen berkomitmen untuk memberikan pelayanan kesehatan yang bermutu, terjangkau, dan berkesinambungan dengan mengedepankan prinsip-prinsip:</p>
+          
+          <div class="principle-box">
+            <div class="principle-card">
+              <h4><i class="fas fa-heartbeat"></i> Patient Safety</h4>
+              <p>Keselamatan pasien sebagai prioritas utama dalam setiap tindakan pelayanan kesehatan.</p>
+            </div>
+            <div class="principle-card">
+              <h4><i class="fas fa-user-shield"></i> Hak Pasien</h4>
+              <p>Menghormati hak-hak pasien dan keluarganya sesuai dengan peraturan yang berlaku.</p>
+            </div>
+            <div class="principle-card">
+              <h4><i class="fas fa-hand-holding-heart"></i> Pelayanan Ramah</h4>
+              <p>Memberikan pelayanan yang ramah, manusiawi, dan tidak diskriminatif.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="standard-section">
+          <h3><i class="fas fa-clipboard-check"></i> STANDAR PELAYANAN MEDIS</h3>
+          <ol>
+            <li><strong>Pelayanan Berbasis Bukti (Evidence Based Medicine)</strong><br>
+              Setiap tindakan medis didasarkan pada bukti ilmiah terkini dan standar profesi.</li>
+            
+            <li><strong>Kerahasiaan Rekam Medis</strong><br>
+              Menjamin kerahasiaan data dan informasi kesehatan pasien sesuai dengan peraturan perundang-undangan.</li>
+            
+            <li><strong>Kesinambungan Pelayanan</strong><br>
+              Memberikan pelayanan yang berkesinambungan dari awal hingga akhir proses pengobatan.</li>
+            
+            <li><strong>Penanganan Keluhan</strong><br>
+              Menyediakan mekanisme penanganan keluhan yang jelas dan transparan.</li>
+          </ol>
+        </div>
+        
+        <div class="standard-section">
+          <h3><i class="fas fa-users"></i> STANDAR PELAYANAN KEPERAWATAN</h3>
+          <ol>
+            <li><strong>Asuhan Keperawatan Holistik</strong><br>
+              Memberikan asuhan keperawatan yang menyeluruh mencakup fisik, psikologis, sosial, dan spiritual.</li>
+            
+            <li><strong>Pendokumentasian yang Akurat</strong><br>
+              Mencatat semua tindakan keperawatan secara akurat dan tepat waktu.</li>
+            
+            <li><strong>Pendidikan Kesehatan</strong><br>
+              Memberikan edukasi kesehatan kepada pasien dan keluarga.</li>
+            
+            <li><strong>Pencegahan Infeksi</strong><br>
+              Menerapkan standar pencegahan dan pengendalian infeksi secara ketat.</li>
+          </ol>
+        </div>
+        
+        <div class="standard-section">
+          <h3><i class="fas fa-clock"></i> STANDAR WAKTU TANGGAP</h3>
+          <ol>
+            <li><strong>UGD</strong><br>
+              Respon pertama dalam waktu ≤ 5 menit untuk kasus gawat darurat.</li>
+            
+            <li><strong>Rawat Jalan</strong><br>
+              Waktu tunggu pelayanan ≤ 60 menit setelah pendaftaran.</li>
+            
+            <li><strong>Rawat Inap</strong><br>
+              Proses admisi ≤ 30 menit untuk kasus non-emergensi.</li>
+            
+            <li><strong>Laboratorium</strong><br>
+              Hasil pemeriksaan rutin tersedia dalam ≤ 24 jam.</li>
+          </ol>
+        </div>
+        
+        <div class="standard-section">
+          <h3><i class="fas fa-shield-alt"></i> STANDAR MUTU DAN KESELAMATAN</h3>
+          <ol>
+            <li><strong>Akreditasi</strong><br>
+              Memenuhi standar akreditasi rumah sakit secara nasional.</li>
+            
+            <li><strong>Pemantauan Mutu</strong><br>
+              Melakukan evaluasi dan pemantauan mutu pelayanan secara berkala.</li>
+            
+            <li><strong>Manajemen Risiko</strong><br>
+              Menerapkan sistem manajemen risiko klinis dan non-klinis.</li>
+            
+            <li><strong>Peningkatan Berkelanjutan</strong><br>
+              Melakukan perbaikan berkelanjutan berdasarkan evaluasi dan umpan balik.</li>
+          </ol>
+        </div>
+        
+        <div class="footer-note">
+          Standar pelayanan ini ditetapkan untuk menjamin kualitas pelayanan kesehatan di RSUD Mijen sesuai dengan peraturan perundang-undangan yang berlaku dan akan dievaluasi secara berkala.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>RSUD MIJEN</h3>
+          <p class="footer-motto">
+            Mitra Untuk Sehat<br />Melayani Dengan Sepenuh Hati
+          </p>
+          <p class="footer-description">
+            RSUD Mijen Kabupaten Semarang membantu mewujudkan masyarakat
+            Kabupaten Semarang agar selalu hidup sehat dan bahagia.
+          </p>
+
+          <div class="social-media">
+            <h4>Ikuti Kami</h4>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/rsudmijen/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rsudmijen/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@rsudmijensemarang" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/@RSUDMIJENSEMARANG" aria-label="YouTube"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <p>
+            <a href="https://maps.app.goo.gl/KX7fUyFo8An1s1xW7"> <i class="fas fa-map-marker-alt"></i> Jl.Rm.Hadisoebeno
+              Sosro
+              Wardoyo,Mijen,Kec. Mijen,<br />
+              Kota Semarang, Jawa Tengah 50215
+          </p></a>
+
+          <p>
+            <a href="https://wa.me/6282324220902"><i class="fas fa-phone"></i> +62 823-2422-0902</a>
+          </p>
+          <p><i class="fas fa-envelope"></i> rsdmijensemarang@gmail.com</p>
+        </div>
+
+        <div class="footer-section quick-access">
+          <h3>Akses Cepat</h3>
+          <ul class="quick-links">
+            <li>
+              <a href="../../pages/dokter/jadwal.html"><i class="fas fa-calendar-alt"></i> Jadwal Dokter</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/ketersedian-kamar.html"><i class="fas fa-bed"></i> Ketersediaan Kamar</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/monitor-antrian.html" target="_blank"><i class="fas fa-tv"></i> Monitor
+                Antrian</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/alur-pelayanan.html"><i class="fas fa-project-diagram"></i> Alur Pelayanan</a>
+            </li>
+            <li>
+              <a href="../../pages/konsultasi/konsultasi.html"><i class="fas fa-comment-medical"></i> Konsultasi Dokter
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Jam Berkunjung Pasien</h3>
+          <div class="visiting-hours">
+            <div class="time-slot">
+              <h4>Siang Hari</h4>
+              <p>11.00 - 14.00 WIB</p>
+            </div>
+            <div class="time-slot">
+              <h4>Sore Hari</h4>
+              <p>16.00 - 20.00 WIB</p>
+            </div>
+          </div>
+          <h3>IGD</h3>
+          <div class="visiting-hours">
+            <div class="time-slot">
+              <h4>24 Jam</h4>
+              <p>Setiap Hari</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 RSUD Mijen - Pemerintah Kota Semarang</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
