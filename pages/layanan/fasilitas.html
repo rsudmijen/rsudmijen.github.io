@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Fasilitas - RSUD Mijen Semarang</title>
+  <link rel="icon" href="../../assets/images/logo-rsud.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <div class="mobile-overlay"></div>
+
+  <header class="site-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="header-content">
+          <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+            <span class="sr-only">Menu</span>
+          </button>
+
+          <div class="logo">
+            <img src="../../assets/images/logo-rsud.png"  alt="Logo RSUD Mijen" />
+            <div class="logo-text">
+              <h1>RSUD Mijen</h1>
+              <p>Pemerintah Kota Semarang</p>
+            </div>
+          </div>
+
+          <div class="search-container">
+            <button class="search-toggle">
+              <i class="fas fa-search"></i>
+              <span class="sr-only">Cari</span>
+            </button>
+            <div class="search-box">
+              <input type="text" placeholder="Cari..." aria-label="Kolom pencarian" />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav id="main-nav">
+      <div class="mobile-nav-header">
+        <img src="../../assets/images/logo-rsud.png" alt="Logo RSUD Mijen" class="mobile-logo" />
+        <div class="mobile-logo-text">
+          <h3>RSUD Mijen</h3>
+          <p>Pemerintah Kota Semarang</p>
+        </div>
+        <button class="close-mobile-menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="../../index.html"><i class="fas fa-home"></i> Beranda</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-hospital"></i> Profil
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/profil/aboutm.html"><i class="fas fa-history"></i> Sejarah</a>
+              </li>
+              <li>
+                <a href="../../pages/profil/visi-misi.html"><i class="fas fa-bullseye"></i> Visi & Misi</a>
+              </li>
+              <li>
+                <a href="../../pages/profil/struktur.html"><i class="fas fa-sitemap"></i> Struktur Organisasi</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-procedures"></i> Layanan
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/layanan/rawat-jalan.html"><i class="fas fa-stethoscope"></i> Rawat Jalan</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/rawat-inap.html"><i class="fas fa-procedures"></i> Rawat Inap</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/ugd.html"><i class="fas fa-ambulance"></i> UGD</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/vk-derina.html"><i class="fas fa-microscope"></i> VK Derina</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/icu.html"><i class="fas fa-procedures"></i> ICU</a>
+              </li>
+              <li>
+                <a href="../../pages/layanan/laboratorium.html"><i class="fas fa-flask"></i> Laboratorium</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-user-md"></i> Dokter
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/dokter/spesialis.html"><i class="fas fa-heartbeat"></i> Dokter Spesialis</a>
+              </li>
+              <li>
+                <a href="../../pages/dokter/umum.html"><i class="fas fa-user-md"></i> Dokter Umum</a>
+              </li>
+              <li>
+                <a href="../../pages/dokter/jadwal.html"><i class="fas fa-calendar-alt"></i> Jadwal Praktik</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../pages/konsultasi/konsultasi.html"><i class="fas fa-comment-medical"></i> Konsultasi Dokter
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> Informasi
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../pages/informasi/monitor-antrian.html" target="_blank"><i class="fas fa-tv"></i> Monitor
+                  Antrian</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/tarif-layanan.html"><i class="fas fa-tags"></i> Tarif Layanan</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/ketersediaan-kamar.html"><i class="fas fa-bed"></i> Ketersediaan Kamar</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/hak-kewajiban.html"><i class="fas fa-balance-scale"></i> Hak & Kewajiban</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/tata-tertib.html"><i class="fas fa-clipboard-list"></i> Tata Tertib</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/alur-pelayanan.html"><i class="fas fa-project-diagram"></i> Alur Pelayanan</a>
+              </li>
+              <li>
+                <a href="../../pages/informasi/standar-pelayanan.html"><i class="fas fa-award"></i> Standar Pelayanan</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-phone-alt"></i> Kontak
+              <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu contact-dropdown">
+              <li>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h4>Telepon Rumah Sakit</h4>
+                    <a href="https://wa.me/6282324220902">Hubungi via WhatsApp</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-item">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div>
+                    <h4>Email Pengaduan</h4>
+                    <a href="rsdmijensemarang@gmail.com">rsdmijensemarang@gmail.com</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="social-media-container">
+                  <h4>Sosial Media</h4>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/rsudmijen/" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rsudmijen/" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@rsudmijensemarang" aria-label="Twitter"><i
+                        class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@RSUDMIJENSEMARANG" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+   <main class="site-main">
+    <div class="facilities-container">
+      <div class="section-header">
+        <h1>FASILITAS RSUD MIJEN</h1>
+        <p>RSUD Mijen menyediakan berbagai fasilitas pelayanan kesehatan yang lengkap dan modern untuk memenuhi kebutuhan masyarakat Kota Semarang dan sekitarnya.</p>
+      </div>
+      
+      <!-- Navigation Tabs -->
+      <div class="facility-tabs">
+        <button class="tab-button active" data-tab="rawat-jalan">
+          <i class="fas fa-stethoscope"></i> Rawat Jalan
+        </button>
+        <button class="tab-button" data-tab="rawat-inap">
+          <i class="fas fa-procedures"></i> Rawat Inap
+        </button>
+        <button class="tab-button" data-tab="ugd">
+          <i class="fas fa-ambulance"></i> UGD
+        </button>
+        <button class="tab-button" data-tab="vk-derina">
+          <i class="fas fa-baby"></i> VK Derina
+        </button>
+        <button class="tab-button" data-tab="icu">
+          <i class="fas fa-heartbeat"></i> ICU
+        </button>
+        <button class="tab-button" data-tab="laboratorium">
+          <i class="fas fa-flask"></i> Laboratorium
+        </button>
+      </div>
+      
+      <!-- Rawat Jalan Section -->
+      <section id="rawat-jalan" class="facility-section active">
+        <h2 class="service-title">LAYANAN RAWAT JALAN</h2>
+        <p class="service-description">Pelayanan rawat jalan RSUD Mijen adalah sebagai berikut:</p>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-tooth"></i>
+            <h3>Poli Gigi</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-baby"></i>
+            <h3>Poli Anak</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-user-nurse"></i>
+            <h3>Poli Bedah</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-lungs"></i>
+            <h3>Poli Penyakit Dalam</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-virus"></i>
+            <h3>Poli DOTS</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-brain"></i>
+            <h3>Poli Psikiatri</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-female"></i>
+            <h3>Poli Obgyn</h3>
+          </div>
+          
+          <div class="service-card">
+            <i class="fas fa-syringe"></i>
+            <h3>Poli VCT</h3>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Rawat Inap Section -->
+      <section id="rawat-inap" class="facility-section">
+        <h2 class="service-title">LAYANAN RAWAT INAP</h2>
+        <p class="service-description">Pelayanan rawat inap RSUD Mijen adalah sebagai berikut:</p>
+        
+        <div class="rooms-container">
+          <!-- Kamar VIP -->
+          <div class="room-card">
+            <div class="room-header">
+              <h3>KAMAR VIP</h3>
+            </div>
+            <img src="../../assets/images/ranapvip.jpeg" alt="Kamar VIP" class="room-image">
+            <div class="room-body">
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> 1 Tempat Tidur Automatic</li>
+                <li><i class="fas fa-snowflake"></i> AC</li>
+                <li><i class="fas fa-temperature-high"></i> Pemanas</li>
+                <li><i class="fas fa-tv"></i> TV</li>
+                <li><i class="fas fa-refrigerator"></i> Kulkas</li>
+                <li><i class="fas fa-archive"></i> Lemari Penyimpanan</li>
+                <li><i class="fas fa-chair"></i> Kursi Penunggu</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Kamar Kelas 1 -->
+          <div class="room-card">
+            <div class="room-header">
+              <h3>KAMAR KELAS 1</h3>
+            </div>
+            <img src="../../assets/images/ranapk1.jpeg" alt="Kamar Kelas 1" class="room-image">
+            <div class="room-body">
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> 2 Tempat Tidur</li>
+                <li><i class="fas fa-snowflake"></i> AC</li>
+                <li><i class="fas fa-archive"></i> Lemari Penyimpanan</li>
+                <li><i class="fas fa-chair"></i> Kursi Penunggu</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Kamar Kelas 3 -->
+          <div class="room-card">
+            <div class="room-header">
+              <h3>KAMAR KELAS 3</h3>
+            </div>
+            <img src="../../assets/images/ranapk3.jpeg" alt="Kamar Kelas 3" class="room-image">
+            <div class="room-body">
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> 4 Tempat Tidur</li>
+                <li><i class="fas fa-snowflake"></i> AC</li>
+                <li><i class="fas fa-archive"></i> Lemari Penyimpanan</li>
+                <li><i class="fas fa-chair"></i> Kursi Penunggu</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Bangsal Psikiatri -->
+          <div class="room-card">
+            <div class="room-header">
+              <h3>BANGSAL PSIKIATRI</h3>
+            </div>
+            <img src="../../assets/images/ranapbangsal.jpeg" alt="Bangsal Psikiatri" class="room-image">
+            <div class="room-body">
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> 2 Tempat Tidur</li>
+                <li><i class="fas fa-snowflake"></i> AC</li>
+                <li><i class="fas fa-archive"></i> Lemari Penyimpanan</li>
+                <li><i class="fas fa-chair"></i> Kursi Penunggu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- UGD Section -->
+      <section id="ugd" class="facility-section">
+        <div class="ugd-hero">
+          <h1><i class="fas fa-ambulance"></i> LAYANAN UGD</h1>
+          <p>Pelayanan Gawat Darurat 24 Jam</p>
+        </div>
+
+        <div class="ugd-section">
+          <h2>TENTANG UGD</h2>
+          <p>UGD adalah suatu tempat atau unit di RSUD Mijen yang memiliki tim kerja dengan kemampuan khusus dan peralatan yang memberikan pelayanan pasien gawat darurat dan merupakan upaya penanggulangan pasien gawat darurat yang memberikan pelayanan kesehatan selama 24 jam.</p>
+          
+          <img src="../../assets/images/GIGD.jpeg" alt="BerAKHLAK - Kementerian Kesehatan RI" class="berakhlak-banner">
+        </div>
+
+        <div class="ugd-section">
+          <h2>FASILITAS KAMI</h2>
+          <p>UGD RSUD Mijen dilengkapi dengan fasilitas modern dan tim medis profesional untuk memberikan pelayanan terbaik dalam situasi darurat.</p>
+          
+          <div class="facilities-grid">
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Bedah Minor</h3>
+                <p>Prosedur operasi kecil untuk luka atau kondisi darurat ringan.</p>
+              </div>
+            </div>
+            
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>PONEK</h3>
+                <p>Pelayanan Obstetri Neonatal Emergensi Komprehensif - Penanganan khusus untuk ibu hamil dan bayi baru lahir dalam keadaan darurat.</p>
+              </div>
+            </div>
+            
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Triase</h3>
+                <p>Sistem pemilahan pasien berdasarkan tingkat kegawatan untuk memprioritaskan penanganan.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="../../assets/images/fasilitasIGD1.jpeg" alt="Tim Medis" class="gallery-img">
+              <div class="gallery-caption">
+                <h3>Ruang Ponek</h3>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="../../assets/images/fasilitasIGD2.jpeg" alt="Peresmian" class="gallery-img">
+              <div class="gallery-caption">
+                <h3>Ruang IGD</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ugd-section">
+          <h2>JAM LAYANAN</h2>
+          <p>UGD RSUD Mijen buka 24 jam setiap hari, termasuk hari libur nasional.</p>
+          <p>Tim medis kami siap memberikan pertolongan pertama dalam situasi darurat kapan saja.</p>
+        </div>
+      </section>
+      
+      <!-- VK Derina Section -->
+      <section id="vk-derina" class="facility-section">
+        <div class="vk-hero">
+          <h1><i class="fas fa-baby"></i> VK DERINA</h1>
+          <p>Ruang Bersalin dan Perawatan Neonatal Terpadu</p>
+        </div>
+
+        <div class="vk-section">
+          <h2>TENTANG VK DERINA</h2>
+          <p>VK adalah ruangan bersalin dan Perina ruangan perawatan Khusus Bayi baru lahir yang bermasalah di RSUD Mijen. Kami menyediakan pelayanan komprehensif untuk ibu bersalin dan perawatan bayi baru lahir dengan fasilitas modern dan tim medis berpengalaman.</p>
+        </div>
+
+        <div class="vk-section">
+          <h2>RUANG VK (Vaginal Klinik)</h2>
+          <p>Fasilitas ruang VK kami dirancang untuk kenyamanan proses persalinan dengan standar kebersihan dan keamanan tinggi.</p>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="../../assets/images/FasilitasVK.jpeg" alt="Tim Medis" class="gallery-img">
+              <div class="gallery-caption">
+                <h3>Fasilitas VK-DERINA</h3>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="../../assets/images/FasilitasVK1.jpeg" alt="Peresmian" class="gallery-img">
+              <div class="gallery-caption">
+                <h3>Fasilitas VK-DERINA</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="facilities-grid">
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Fasilitas Ruang VK</h3>
+                <ul class="facility-list">
+                  <li><i class="fas fa-bed"></i> Dua tempat tidur bersalin</li>
+                  <li><i class="fas fa-bath"></i> Kamar mandi khusus</li>
+                  <li><i class="fas fa-eye"></i> Ruang observasi</li>
+                  <li><i class="fas fa-monitor-heart-rate"></i> Pemantauan kondisi ibu dan bayi</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Tim Medis VK</h3>
+                <ul class="facility-list">
+                  <li><i class="fas fa-user-md"></i> Dokter spesialis kandungan</li>
+                  <li><i class="fas fa-nurse"></i> Bidan berpengalaman</li>
+                  <li><i class="fas fa-head-side-mask"></i> Perawat neonatal</li>
+                  <li><i class="fas fa-ambulance"></i> Tim gawat darurat kebidanan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vk-section">
+          <h2>RUANG PERINA (Perinatologi)</h2>
+          <p>Ruang Perina kami dilengkapi dengan peralatan khusus untuk perawatan bayi baru lahir yang memerlukan penanganan intensif.</p>
+          
+          <div class="facilities-grid">
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Fasilitas Perina</h3>
+                <ul class="facility-list">
+                  <li><i class="fas fa-baby-carriage"></i> Inkubator modern</li>
+                  <li><i class="fas fa-lungs"></i> CPAP (alat bantu nafas untuk bayi)</li>
+                  <li><i class="fas fa-heartbeat"></i> Bed side monitor</li>
+                  <li><i class="fas fa-baby"></i> Box bayi khusus</li>
+                  <li><i class="fas fa-wind"></i> Oksigen central</li>
+                  <li><i class="fas fa-thermometer"></i> Pengatur suhu ruangan</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="facility-card">
+              <div class="facility-content">
+                <h3>Layanan Perina</h3>
+                <ul class="facility-list">
+                  <li><i class="fas fa-procedures"></i> Perawatan bayi prematur</li>
+                  <li><i class="fas fa-lungs-virus"></i> Bantuan pernapasan neonatal</li>
+                  <li><i class="fas fa-vial"></i> Pemeriksaan laboratorium khusus</li>
+                  <li><i class="fas fa-syringe"></i> Terapi obat intensif</li>
+                  <li><i class="fas fa-heart"></i> Pemantauan jantung 24 jam</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vk-section">
+          <h2>JAM KUNJUNG</h2>
+          <ul class="facility-list">
+            <li><i class="far fa-clock"></i> Senin - Jumat: 10.00 - 12.00 dan 16.00 - 18.00</li>
+            <li><i class="far fa-clock"></i> Sabtu - Minggu: 10.00 - 12.00</li>
+            <li><i class="fas fa-exclamation-circle"></i> Khusus ayah/bayi dapat mengunjungi kapan saja dengan izin perawat</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- ICU Section -->
+      <section id="icu" class="facility-section">
+        <div class="icu-hero">
+          <h1><i class="fas fa-heartbeat"></i> INTENSIVE CARE UNIT (ICU)</h1>
+          <p>Unit Perawatan Intensif dengan Fasilitas Terbaik</p>
+        </div>
+        
+        <!-- Gambar ICU -->
+        <div class="icu-images">
+          <div class="icu-image">
+            <img src="../../assets/images/icu-1.jpg" alt="Ruangan ICU RSUD Mijen">
+            <div class="icu-image-caption">Ruangan ICU RSUD Mijen dengan fasilitas lengkap</div>
+          </div>
+          <div class="icu-image">
+            <img src="../../assets/images/icu-2.jpg" alt="Peralatan ICU Modern">
+            <div class="icu-image-caption">Peralatan canggih di ICU RSUD Mijen</div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas ICU -->
+        <div class="icu-facilities">
+          <h2><i class="fas fa-procedures"></i> FASILITAS DAN PERALATAN ICU</h2>
+          <div class="facility-list-icu">
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-lungs"></i> Oksigen Central</h3>
+              <p>Sistem oksigen terpusat yang selalu siap untuk mendukung pernapasan pasien dengan suplai oksigen yang stabil dan terkontrol.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-heartbeat"></i> EKG (alat rekam jantung)</h3>
+              <p>Peralatan untuk memantau aktivitas listrik jantung secara terus menerus, mendeteksi kelainan irama jantung.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-syringe"></i> Infus Pump dan Syringe Pump</h3>
+              <p>Alat untuk pemberian cairan infus dan obat secara presisi dengan dosis yang terkontrol ketat.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-wind"></i> Ventilator (mesin penunjang pernapasan)</h3>
+              <p>Mesin yang membantu atau menggantikan fungsi pernapasan pasien yang mengalami gangguan pernapasan berat.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-tv"></i> Bed side monitor (pemantau tanda vital)</h3>
+              <p>Monitor yang menampilkan parameter vital pasien seperti detak jantung, tekanan darah, saturasi oksigen secara real-time.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-bolt"></i> Defibrilator (alat kejut jantung)</h3>
+              <p>Alat untuk mengembalikan irama jantung normal pada pasien yang mengalami henti jantung atau aritmia berbahaya.</p>
+            </div>
+            <div class="facility-item-icu">
+              <h3><i class="fas fa-first-aid"></i> Emergency KIT dan obat-obatan Emergency</h3>
+              <p>Perlengkapan dan obat-obatan darurat yang selalu siap untuk menangani berbagai kondisi gawat darurat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Laboratorium Section -->
+      <section id="laboratorium" class="facility-section">
+        <div class="lab-hero">
+          <h1><i class="fas fa-flask"></i> LABORATORIUM KIMIA KLINIK</h1>
+          <p>Melayani berbagai pemeriksaan laboratorium dengan akurasi tinggi dan hasil cepat</p>
+        </div>
+        
+        <!-- Gambar Laboratorium -->
+        <div class="lab-images">
+          <div class="lab-image">
+            <img src="../../assets/images/lab-1.jpg" alt="Laboratorium Kimia Klinik RSUD Mijen">
+            <div class="lab-image-caption">Area Kerja Laboratorium Kimia Klinik</div>
+          </div>
+          <div class="lab-image">
+            <img src="../../assets/images/lab-2.jpg" alt="Alat-alat Laboratorium Modern">
+            <div class="lab-image-caption">Peralatan Modern Laboratorium Kami</div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-flask"></i> Elektrolit & Mineral</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Kalium</h3>
+              <p>Pemeriksaan kadar kalium dalam darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Natrium</h3>
+              <p>Pemeriksaan kadar natrium dalam darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Klorida</h3>
+              <p>Pemeriksaan kadar klorida dalam darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Kalsium</h3>
+              <p>Pemeriksaan kadar kalsium dalam darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Magnesium</h3>
+              <p>Pemeriksaan kadar magnesium dalam darah</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-heartbeat"></i> Jantung & Inflamasi</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Troponin I</h3>
+              <p>Pemeriksaan untuk diagnosis serangan jantung</p>
+            </div>
+            <div class="lab-test">
+              <h3>CRP</h3>
+              <p>C-Reactive Protein, penanda inflamasi</p>
+            </div>
+            <div class="lab-test">
+              <h3>CKMB</h3>
+              <p>Creatine Kinase-MB, penanda kerusakan otot jantung</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-candy-cane"></i> Gula Darah & Metabolik</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Gula darah sewaktu</h3>
+              <p>Pemeriksaan gula darah tanpa puasa</p>
+            </div>
+            <div class="lab-test">
+              <h3>Gula darah puasa</h3>
+              <p>Pemeriksaan gula darah setelah puasa 8 jam</p>
+            </div>
+            <div class="lab-test">
+              <h3>Gula darah 2 jam PP</h3>
+              <p>Pemeriksaan gula darah 2 jam setelah makan</p>
+            </div>
+            <div class="lab-test">
+              <h3>Tes Toleransi Glukosa Oral (TTGO)</h3>
+              <p>Pemeriksaan untuk diagnosis diabetes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-chart-pie"></i> Lipid</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Cholesterol total</h3>
+              <p>Pemeriksaan kadar kolesterol total</p>
+            </div>
+            <div class="lab-test">
+              <h3>HDL-Cholesterol</h3>
+              <p>Kolesterol baik (High-Density Lipoprotein)</p>
+            </div>
+            <div class="lab-test">
+              <h3>LDL-Cholesterol</h3>
+              <p>Kolesterol jahat (Low-Density Lipoprotein)</p>
+            </div>
+            <div class="lab-test">
+              <h3>Trigiserid</h3>
+              <p>Pemeriksaan kadar trigliserida</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-liver"></i> Fungsi Hati</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>SGOT</h3>
+              <p>Serum Glutamic Oxaloacetic Transaminase</p>
+            </div>
+            <div class="lab-test">
+              <h3>SGPT</h3>
+              <p>Serum Glutamic Pyruvic Transaminase</p>
+            </div>
+            <div class="lab-test">
+              <h3>Bilirubin Total</h3>
+              <p>Pemeriksaan kadar bilirubin total</p>
+            </div>
+            <div class="lab-test">
+              <h3>Bilirubin Indirek</h3>
+              <p>Pemeriksaan kadar bilirubin tidak terkonjugasi</p>
+            </div>
+            <div class="lab-test">
+              <h3>Bilirubin Direk</h3>
+              <p>Pemeriksaan kadar bilirubin terkonjugasi</p>
+            </div>
+            <div class="lab-test">
+              <h3>Gamma GT</h3>
+              <p>Gamma Glutamyl Transferase</p>
+            </div>
+            <div class="lab-test">
+              <h3>Alkali Fosfatase</h3>
+              <p>Enzim yang terkait dengan hati dan tulang</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-kidneys"></i> Fungsi Ginjal</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Ureum</h3>
+              <p>Pemeriksaan kadar ureum darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Kreatinin</h3>
+              <p>Pemeriksaan fungsi ginjal</p>
+            </div>
+            <div class="lab-test">
+              <h3>Asam Urat</h3>
+              <p>Pemeriksaan kadar asam urat darah</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-virus"></i> Imunoserologi</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Widal</h3>
+              <p>Pemeriksaan untuk demam tifoid</p>
+            </div>
+            <div class="lab-test">
+              <h3>HBsAg</h3>
+              <p>Pemeriksaan antigen hepatitis B</p>
+            </div>
+            <div class="lab-test">
+              <h3>Anti HBs</h3>
+              <p>Antibodi terhadap hepatitis B</p>
+            </div>
+            <div class="lab-test">
+              <h3>Anti HCV</h3>
+              <p>Antibodi terhadap hepatitis C</p>
+            </div>
+            <div class="lab-test">
+              <h3>Anti HIV</h3>
+              <p>Pemeriksaan skrining HIV</p>
+            </div>
+            <div class="lab-test">
+              <h3>Dengue IgG/IgM</h3>
+              <p>Pemeriksaan untuk demam berdarah</p>
+            </div>
+            <div class="lab-test">
+              <h3>NS 1</h3>
+              <p>Pemeriksaan dini demam berdarah</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-hormone"></i> Hormon & Tumor Marker</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>FT3</h3>
+              <p>Free Triiodothyronine, pemeriksaan fungsi tiroid</p>
+            </div>
+            <div class="lab-test">
+              <h3>FT4</h3>
+              <p>Free Thyroxine, pemeriksaan fungsi tiroid</p>
+            </div>
+            <div class="lab-test">
+              <h3>TSH</h3>
+              <p>Thyroid Stimulating Hormone</p>
+            </div>
+            <div class="lab-test">
+              <h3>AFP</h3>
+              <p>Alpha-Fetoprotein, penanda tumor hati</p>
+            </div>
+            <div class="lab-test">
+              <h3>CEA</h3>
+              <p>Carcinoembryonic Antigen, penanda tumor saluran cerna</p>
+            </div>
+            <div class="lab-test">
+              <h3>CA-125</h3>
+              <p>Penanda tumor ovarium</p>
+            </div>
+            <div class="lab-test">
+              <h3>CA-15.3</h3>
+              <p>Penanda tumor payudara</p>
+            </div>
+            <div class="lab-test">
+              <h3>CA 19-9</h3>
+              <p>Penanda tumor pankreas</p>
+            </div>
+            <div class="lab-test">
+              <h3>HCG Titer</h3>
+              <p>Human Chorionic Gonadotropin, untuk kehamilan dan tumor</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lab-category">
+          <h2><i class="fas fa-dna"></i> Protein</h2>
+          <div class="lab-tests">
+            <div class="lab-test">
+              <h3>Total Protein</h3>
+              <p>Pemeriksaan kadar protein total darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Albumin</h3>
+              <p>Pemeriksaan kadar albumin darah</p>
+            </div>
+            <div class="lab-test">
+              <h3>Globulin</h3>
+              <p>Pemeriksaan kadar globulin darah</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>RSUD MIJEN</h3>
+          <p class="footer-motto">
+            Mitra Untuk Sehat<br />Melayani Dengan Sepenuh Hati
+          </p>
+          <p class="footer-description">
+            RSUD Mijen Kabupaten Semarang membantu mewujudkan masyarakat
+            Kabupaten Semarang agar selalu hidup sehat dan bahagia.
+          </p>
+
+          <div class="social-media">
+            <h4>Ikuti Kami</h4>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/rsudmijen/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rsudmijen/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@rsudmijensemarang" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/@RSUDMIJENSEMARANG" aria-label="YouTube"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <p>
+            <a href="https://maps.app.goo.gl/KX7fUyFo8An1s1xW7"> <i class="fas fa-map-marker-alt"></i> Jl.Rm.Hadisoebeno
+              Sosro
+              Wardoyo,Mijen,Kec. Mijen,<br />
+              Kota Semarang, Jawa Tengah 50215
+          </p></a>
+
+          <p>
+            <a href="https://wa.me/6282324220902"><i class="fas fa-phone"></i> +62 823-2422-0902</a>
+          </p>
+          <p><i class="fas fa-envelope"></i> rsdmijensemarang@gmail.com</p>
+        </div>
+
+        <div class="footer-section quick-access">
+          <h3>Akses Cepat</h3>
+          <ul class="quick-links">
+            <li>
+              <a href="../../pages/dokter/jadwal.html"><i class="fas fa-calendar-alt"></i> Jadwal Dokter</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/ketersedian-kamar.html"><i class="fas fa-bed"></i> Ketersediaan Kamar</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/monitor-antrian.html" target="_blank"><i class="fas fa-tv"></i> Monitor
+                Antrian</a>
+            </li>
+            <li>
+              <a href="../../pages/informasi/alur-pelayanan.html"><i class="fas fa-project-diagram"></i> Alur Pelayanan</a>
+            </li>
+            <li>
+              <a href="../../pages/konsultasi/konsultasi.html"><i class="fas fa-comment-medical"></i> Konsultasi Dokter
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Jam Berkunjung Pasien</h3>
+          <div class="visiting-hours">
+            <div class="time-slot">
+              <h4>Siang Hari</h4>
+              <p>11.00 - 14.00 WIB</p>
+            </div>
+            <div class="time-slot">
+              <h4>Sore Hari</h4>
+              <p>16.00 - 20.00 WIB</p>
+            </div>
+          </div>
+          <h3>IGD</h3>
+          <div class="visiting-hours">
+            <div class="time-slot">
+              <h4>24 Jam</h4>
+              <p>Setiap Hari</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 RSUD Mijen - Pemerintah Kota Semarang</p>
+      </div>
+
+  </footer>
+
+  <script src="../../assets/js/script.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabSections = document.querySelectorAll('.facility-section');
+      
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons and sections
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabSections.forEach(section => section.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Show corresponding section
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
