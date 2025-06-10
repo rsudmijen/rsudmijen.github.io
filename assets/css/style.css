@@ -4330,8 +4330,8 @@ h1 {
         min-width: 100%;
       }
     }
-/*fasilitas  */
- /* General Styles */
+    /* fasilitas */
+     /* General Styles */
     .facilities-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -4778,7 +4778,7 @@ h1 {
     
     .lab-image img {
       width: 100%;
-      height: auto;
+      height: 500px ;
       display: block;
       transition: transform 0.3s ease;
     }
@@ -4793,6 +4793,7 @@ h1 {
       text-align: center;
       font-style: italic;
       color: #555;
+      
     }
     
     .lab-category {
