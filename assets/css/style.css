@@ -3546,11 +3546,13 @@ h1 {
   color: white;
   padding: 12px;
   text-align: left;
+  width: auto;
 }
 
 .tarif-table td {
   padding: 12px;
   border-bottom: 1px solid #eee;
+  width:auto;
 }
 
 .tarif-table tr:nth-child(even) {
