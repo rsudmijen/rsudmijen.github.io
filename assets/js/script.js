@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     {
       title: "Cek Kesehatan Gratis (CKG) di RSUD Mijen",
-      date: "12 MMaret 2025",
+      date: "12 Maret 2025",
       excerpt: "Pemeriksaan Kesehatan Gratis.",
       fullContent: `<p>
                 Program <strong>CKG</strong> adalah inisiatif dari RSUD Mijen yang memberikan layanan pemeriksaan kesehatan gratis untuk seluruh masyarakat, dari bayi hingga lansia.
